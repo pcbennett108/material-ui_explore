@@ -1,3 +1,6 @@
+# Test project to learn React and Material UI
+Trying out Material UI for the first time to see how it works along with more practice with React.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
