@@ -1,7 +1,9 @@
 import React from "react";
+import Stack from "@mui/material/Stack";
 import {
   Typography,
   AppBar,
+  Box,
   Button,
   Card,
   CardActions,
@@ -59,20 +61,15 @@ const App = () => {
                 possibilities of a sound-image made up of irreducible phonic
                 substance beyond linguistic or musicological analysis.
               </Typography>
-              <div>
-                <Grid container spacing={2} justify="center">
-                  <Grid item>
-                    <Button variant="contained" color="primary">
-                      View my images
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Button variant="outlined" color="primary">
-                      Get image details
-                    </Button>
-                  </Grid>
-                </Grid>
-              </div>
+              <Stack
+                sx={{ pt: 4 }}
+                direction="row"
+                spacing={2}
+                justifyContent="center"
+              >
+                <Button variant="contained">Main call to action</Button>
+                <Button variant="outlined">Secondary action</Button>
+              </Stack>
             </Container>
           </div>
           <Container sx={{ py: 8 }} maxWidth="md">
@@ -119,6 +116,20 @@ const App = () => {
             </Grid>
           </Container>
         </main>
+        <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
+          <Typography variant="h6" align="center" gutterBottom>
+            Our footer has something to say
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            color="text.secondary"
+            component="p"
+          >
+            This footer is saying something important about the creators of this
+            page.
+          </Typography>
+        </Box>
       </ThemeProvider>
     </>
   );
